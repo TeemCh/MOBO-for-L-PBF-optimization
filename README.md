@@ -19,7 +19,7 @@ Just follow the link to Streamlit app to see the demonstration.
 
 3. Open terminal and enter 'python run_gui.py'
 
-<img width="200" src="figures/tutorial.jpg">
+<img width="500" src="figures/tutorial.jpg">
 
 
 4. Click 'create experiment'. Give it any name. Choose problem name 'hardness_porosity'. Initialization from file. Provide path to files in data folder. For design variables choose 'features58.csv' and for performance select 'target58.csv'. Finally choose DGEMO algorithm in optimization tab. That's it!

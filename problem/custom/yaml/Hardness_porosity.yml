@@ -1,0 +1,50 @@
+name: Hardness_porosity
+type: mixed
+var:
+  time:
+    type: integer
+    lb: 1
+    ub: 4
+  gas:
+    type: continuous
+    lb: 1.5
+    ub: 4.0
+  power:
+    type: integer
+    lb: 30
+    ub: 175
+  speed:
+    type: integer
+    lb: 100
+    ub: 3000
+  hatch:
+    type: integer
+    lb: 40
+    ub: 120
+  energy:
+    type: integer
+    lb: 0
+    ub: 500
+  angle:
+    type: integer
+    lb: 0
+    ub: 150
+n_obj: 2
+obj_name:
+- hardness
+- porosity
+obj_type:
+- max
+- min
+obj_func: null
+n_constr: 0
+constr_func: null
+n_var: 7
+var_name:
+- x1
+- x2
+- x3
+- x4
+- x5
+- x6
+- x7
