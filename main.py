@@ -10,25 +10,22 @@ from multiprocessing import Process, Queue
 # Containers
 header = st.container()
 
-st.header('This app displays the result of the DGEMO algorithm. \
- It guides with process ')
+st.header('This app displays the result of the DGEMO algorithm. ')
 
 # Select
 # root_folder = st.sidebar.text_input('Upload data',value='demo_files/')
 
+
+    
+
 if st.button('Run experiment'):
-    st.write('Why hello there')
-else:
-    st.write('Goodbye')
+    hv = Image.open('figures/hyper57.png')
 
+    st.image(hv, caption='hypervolume',use_column_width ='auto')    
 
-hv = Image.open('figures/hyper57.png')
+    design_space = Image.open('figures/performance57.png')
 
-st.image(hv, caption='hypervolume',use_column_width ='auto')    
-
-design_space = Image.open('figures/performance57.png')
-
-st.image(design_space, caption='design space',use_column_width ='auto')    
+    st.image(design_space, caption='design space',use_column_width ='auto')    
 
 
 
