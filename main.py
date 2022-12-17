@@ -10,13 +10,11 @@ from multiprocessing import Process, Queue
 # Containers
 header = st.container()
 
-st.markdown('Streamlit is **_really_ cool**.')
+st.header('This app displays the result of the DGEMO algorithm. \
+ It guides with process ')
 
 # Select
 # root_folder = st.sidebar.text_input('Upload data',value='demo_files/')
-
-with header:
-    st.header('Bayesian methods')
 
 if st.button('Run experiment'):
     st.write('Why hello there')
