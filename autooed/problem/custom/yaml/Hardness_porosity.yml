@@ -6,9 +6,9 @@ var:
     lb: 1
     ub: 4
   gas:
-    type: continuous
-    lb: 1.5
-    ub: 4.0
+    type: integer
+    lb: 1
+    ub: 4
   power:
     type: integer
     lb: 30
@@ -23,8 +23,8 @@ var:
     ub: 120
   energy:
     type: integer
-    lb: 0
-    ub: 500
+    lb: 65
+    ub: 280
   angle:
     type: integer
     lb: 0

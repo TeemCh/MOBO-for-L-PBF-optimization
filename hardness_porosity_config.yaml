@@ -1,0 +1,18 @@
+problem:
+  name: Hardness_porosity
+algorithm:
+  name: dgemo
+  n_process: {}
+  async: {}
+  surrogate: {}
+  acquisition: {} 
+  solver: {} 
+  selection: {}
+  async:
+    name: none
+experiment:
+  n_random_sample: 0
+  init_sample_path: ['files/features.csv', 'files/target.csv']
+  batch_size: 10
+  n_worker: 8
+
