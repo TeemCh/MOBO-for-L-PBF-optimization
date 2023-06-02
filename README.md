@@ -1,4 +1,4 @@
-# Bayesian metal printing
+# Multi-objective Bayesian Optimization for process optimization of L-PBF
 Web app dedicated to metal additive manufacturing. Providing efficient process planning saving material and time resources 
 [*Link to app*](https://teemch-bayesian-metal-printing-main-9cufaq.streamlit.app/)
 
