@@ -1,31 +1,35 @@
 # Multi-objective Bayesian Optimization for process optimization of L-PBF
-Web app dedicated to metal additive manufacturing. Providing efficient process planning saving material and time resources 
-[*Link to app*](https://teemch-bayesian-metal-printing-main-9cufaq.streamlit.app/)
 
-<img width="500" src="figures/bad.jpg">
 
 ## Case study
 
-In this work Multi-objective Bayesian Optimization algorithm DGEMO is used to predict the properties of material (SS 316L) based on proccess oonditions and suggest next set of parameters that would produce denser and harder sample. 
+In this study, we employed the Multi-objective Bayesian Optimization algorithm called [DGEMO](https://github.com/yunshengtian/DGEMO) to predict the properties of a material (SS 316L) based on process conditions and provide recommendations for the next set of parameters that would yield denser and harder samples.
 
-The metalic samples were printed in laboratory of additive manufactruing in Skoltech, Moscow. Each sample has unique set of process conditions that resulted in different hardness and porosity. The goal of the algorithm is to map process conditions and mechanical properties of fabricated metalic part and propose next set of conditions that we haven't tried before.
+The metallic samples were fabricated in the additive manufacturing laboratory at Skoltech, Moscow. Each sample was produced using a specific set of process conditions, resulting in varying levels of hardness and porosity. The objective of our algorithm is to establish a mapping between the process conditions and the mechanical properties of the fabricated metallic parts. This mapping enables us to suggest novel process conditions that have not been explored before.
 
-Just follow the link to Streamlit app to see the demonstration.
+By leveraging the power of DGEMO, we aim to optimize the additive manufacturing process for SS 316L, ultimately improving the density and hardness of the printed samples. This optimization process can lead to enhanced material performance and open up new possibilities for advanced manufacturing applications.
 
-## Alternative way of running experiment 
+## Citation
 
-1. Install [AutoOED from source](https://github.com/yunshengtian/AutoOED)
+If you find our work helpful to your research, please consider citing our [paper](https://doi.org/10.3390/ma16031050).
 
-2. Upload custom problem 'Hardness_porosity.yml'  to path '..\autooed\problem\custom\yaml'
+```
 
-3. Open terminal and enter 'python run_gui.py'
-
-<img width="500" src="figures/tutorial.jpg">
-
-
-4. Click 'create experiment'. Give it any name. Choose problem name 'hardness_porosity'. Initialization from file. Provide path to files in data folder. For design variables choose 'features58.csv' and for performance select 'target58.csv'. Finally choose DGEMO algorithm in optimization tab. That's it!
-
-5. Observe the plots and hypervolume improvement.
+@Article{ma16031050,
+AUTHOR = {Chepiga, Timur and Zhilyaev, Petr and Ryabov, Alexander and Simonov, Alexey P. and Dubinin, Oleg N. and Firsov, Denis G. and Kuzminova, Yulia O. and Evlashin, Stanislav A.},
+TITLE = {Process Parameter Selection for Production of Stainless Steel 316L Using Efficient Multi-Objective Bayesian Optimization Algorithm},
+JOURNAL = {Materials},
+VOLUME = {16},
+YEAR = {2023},
+NUMBER = {3},
+ARTICLE-NUMBER = {1050},
+URL = {https://www.mdpi.com/1996-1944/16/3/1050},
+PubMedID = {36770057},
+ISSN = {1996-1944},
+ABSTRACT = {Additive manufacturing is a modern technique to produce parts with a complex geometry. However, the choice of the printing parameters is a time-consuming and costly process. In this study, the parameter optimization for the laser powder bed fusion process was investigated. Using state-of-the art multi-objective Bayesian optimization, the set of the most-promising process parameters (laser power, scanning speed, hatch distance, etc.), which would yield parts with the desired hardness and porosity, was established. The Gaussian process surrogate model was built on 57 empirical data points, and through efficient sampling in the design space, we were able to obtain three points in the Pareto front in just over six iterations. The produced parts had a hardness ranging from 224&ndash;235 HV and a porosity in the range of 0.2&ndash;0.37%. The trained model recommended using the following parameters for high-quality parts: 58 W, 257 mm/s, 45 &micro;m, with a scan rotation angle of 131 degrees. The proposed methodology greatly reduces the number of experiments, thus saving time and resources. The candidate process parameters prescribed by the model were experimentally validated and tested.},
+DOI = {10.3390/ma16031050}
+}
+```
 
 
 
